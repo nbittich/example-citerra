@@ -9,7 +9,6 @@
 
 <body
     prefix="belgif: http://vocab.belgif.be/ns/publicservice# m8g: http://data.europa.eu/m8g/ cpsv: http://purl.org/vocab/cpsv# mit: https://data.vlaanderen.be/ns/mobiliteit-intelligente-toegang# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# geosparql: http://www.opengis.net/ont/geosparql# locn: http://www.w3.org/ns/locn# besluit: http://data.vlaanderen.be/ns/besluit# mobiliteit: https://data.vlaanderen.be/ns/mobiliteit# eli: http://data.europa.eu/eli/ontology# prov: http://www.w3.org/ns/prov# adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# m8g: http://data.europa.eu/m8g/ dct: http://purl.org/dc/terms/">
-    >
     <div typeof="mobiliteit:Zone" resource="https://data.lblod.info/id/autoluwezone/1">
         <span property="dct:type" value="http://data.vlaanderen.be/id/concept/ZoneType/5ab0e9b8a3b2ca7c5e00001b"></span>
         1. <span property="rdfs:label">Autoluw gebied 1</span>:
@@ -85,49 +84,50 @@
         <div property="sro:bekrachtigt" resource="http://data.lblod.info/id/dienstverlening/1"
             typeof="cpsv:PublicService">
             <span property="m8g:hasCompetentAuthority"
-                resource="https://data.lblod.info/id/bestuursorganen/4de2e9b8044fdac4a6b6ab0cabede7917dd7274c88ed8f5cadae89e1e5ee8bd6">
-            </span>
+                resource="https://data.lblod.info/id/bestuursorganen/4de2e9b8044fdac4a6b6ab0cabede7917dd7274c88ed8f5cadae89e1e5ee8bd6"></span>
             <span property="mit:heeftOutputtype"
                 resource="http://data.vlaanderen.be/id/concept/PubliekeDienstverleningOutputCode/5ab0e9b8a3b2ca7c5e00001b"></span>
 
             <div property="http://vocab.belgif.be/ns/publicservice#hasRequirement" typeof="m8g:Requirement"
                 resource="http://data.lblod.info/id/voorwaarden/1">
-                <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/zone">
-                    <div property="dct:description" lang="nl">
-                        <p>§ 1. Deze vergunning kan enkel aangevraagd worden voor volgende zones:</p>
-                        <div resource="https://data.lblod.info/id/zone/1" typeof="mobiliteit:Zone"
-                            property="ext:expectedValue">
-                            <span property="dct:type"
-                                resource="http://data.vlaanderen.be/id/concept/ZoneType/5ab0e9b8a3b2ca7c5e00001b"></span>
-                            <p>- </p><span property="rdfs:label">Autoluwgebied 1</span>:
-                            <div property="locn:geometry" typeof="locn:Geometry"
-                                resource="https://data.lblod.info/id/zone/1/geometrie/1">
-                                <span property="geosparql:asWKT"
-                                    content="<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)"
-                                    datatype="geosparql:wktLiteral"></span>
-                            </div>
+                <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/zone"></span>
+                <div property="dct:description" lang="nl">
+                    <p>§ 1. Deze vergunning kan enkel aangevraagd worden voor volgende zones:</p>
+                    <div resource="https://data.lblod.info/id/zone/1" typeof="mobiliteit:Zone"
+                        property="ext:expectedValue">
+                        <span property="dct:type"
+                            resource="http://data.vlaanderen.be/id/concept/ZoneType/5ab0e9b8a3b2ca7c5e00001b"></span>
+                        <p>-</p>
+                        <span property="rdfs:label">Autoluwgebied 1</span>:
+                        <div property="locn:geometry" typeof="locn:Geometry"
+                            resource="https://data.lblod.info/id/zone/1/geometrie/1">
+                            <span property="geosparql:asWKT"
+                                content="<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)"
+                                datatype="geosparql:wktLiteral"></span>
                         </div>
                     </div>
-
+                </div>
             </div>
             <div property="sro:bekrachtigt" resource="http://data.lblod.info/id/dienstverlening/1"
                 typeof="cpsv:PublicService">
                 <p>§ 1. Deze vergunning kan worden aangevraagd door één van de volgende doelgroepen:</p>
                 <div property="belgif:hasRequirement" typeof="m8g:Requirement"
                     resource="http://data.lblod.info/id/voorwaarden/1">
-                    <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/doelgroep">
-                        <div property="dct:description" lang="nl">
-                            - <span property="ext:expectedValue" resource="https://data.lblod.info/id/doelgroep/1"
-                                typeof="skos:Concept">de ondernemer</span>
-                        </div>
+                    <span property="dct:type"
+                        value="https://data.vlaanderen.be/id/concept/VoorwaardeType/doelgroep"></span>
+                    <div property="dct:description" lang="nl">
+                        - <span property="ext:expectedValue" resource="https://data.lblod.info/id/doelgroep/1"
+                            typeof="skos:Concept">de ondernemer</span>
+                    </div>
                 </div>
                 <div property="belgif:hasRequirement" typeof="m8g:Requirement"
                     resource="http://data.lblod.info/id/voorwaarden/2">
-                    <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/doelgroep">
-                        <div property="dct:description" lang="nl">
-                            - <span property="ext:expectedValue" resource="https://data.lblod.info/id/doelgroep/2"
-                                typeof="skos:Concept">de rechtspersoon die nutsdiensten levert</span>
-                        </div>
+                    <span property="dct:type"
+                        value="https://data.vlaanderen.be/id/concept/VoorwaardeType/doelgroep"></span>
+                    <div property="dct:description" lang="nl">
+                        - <span property="ext:expectedValue" resource="https://data.lblod.info/id/doelgroep/2"
+                            typeof="skos:Concept">de rechtspersoon die nutsdiensten levert</span>
+                    </div>
                 </div>
             </div>
             <div property="sro:bekrachtigt" resource="http://data.lblod.info/id/dienstverlening/1"
@@ -138,41 +138,40 @@
                 </p>
                 <div property="belgif:hasRequirement" typeof="m8g:Requirement"
                     resource="http://data.lblod.info/id/voorwaarden/1">
-                    <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit">
-                        <div property="dct:description" lang="nl">
-                            - a. <div property="ext:expectedValue"
-                                resource="http://data.lblod.info/id/activiteiten/goederen-laden-en-lossen"
-                                typeof="skos:Concept">
-                                <span property="skos:prefLabel" language="nl">goederen te laden en te lossen</span>
-                                ;
-                            </div>
+                    <span property="dct:type"
+                        value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit"></span>
+                    <div property="dct:description" lang="nl">
+                        - a. <div property="ext:expectedValue"
+                            resource="http://data.lblod.info/id/activiteiten/goederen-laden-en-lossen"
+                            typeof="skos:Concept">
+                            <span property="skos:prefLabel" lang="nl">goederen te laden en te lossen</span>;
                         </div>
+                    </div>
                 </div>
                 <div property="belgif:hasRequirement" typeof="m8g:Requirement"
                     resource="http://data.lblod.info/id/voorwaarden/2">
-                    <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit">
-                        <div property="dct:description" lang="nl">
-                            - b. <div property="ext:expectedValue"
-                                resource="http://data.lblod.info/id/activiteiten/werken-uitvoeren"
-                                typeof="skos:Concept">
-                                <span property="skos:prefLabel" language="nl">werken uit te voeren</span>
-                                .
-                            </div>
+                    <span property="dct:type"
+                        value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit"></span>
+                    <div property="dct:description" lang="nl">
+                        - b. <div property="ext:expectedValue"
+                            resource="http://data.lblod.info/id/activiteiten/werken-uitvoeren" typeof="skos:Concept">
+                            <span property="skos:prefLabel" lang="nl">werken uit te voeren</span>.
                         </div>
+                    </div>
                 </div>
             </div>
 
             <div property="belgif:hasRequirement" typeof="m8g:Requirement"
                 resource="http://data.lblod.info/id/voorwaarden/3">
                 <span property="m8g:isRequirementOf" resource="http://data.lblod.info/id/voorwaarden/1"></span>
-                <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit">
-                    <div property="dct:description" lang="nl">
-                        1) hetzij, voor <div property="ext:expectedValue"
-                            resource="http://data.lblod.info/id/activiteiten/werken-uitvoeren" typeof="skos:Concept">
-                            <span property="skos:prefLabel" language="nl">werken uit te voeren</span>
-                            ;
-                        </div>
+                <span property="dct:type"
+                    value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit"></span>
+                <div property="dct:description" lang="nl">
+                    1) hetzij, voor <div property="ext:expectedValue"
+                        resource="http://data.lblod.info/id/activiteiten/werken-uitvoeren" typeof="skos:Concept">
+                        <span property="skos:prefLabel" lang="nl">werken uit te voeren</span>;
                     </div>
+                </div>
             </div>
             <div about="http://data.lblod.info/id/voorwaarden/1">
                 <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
@@ -181,7 +180,7 @@
                         resource="https://data.lblod.info/id/bewijstype/1">
                         <div property="m8g:evidenceTypeClassification"
                             value="https://data.vlaanderen.be/id/concept/bewijstypeclassificatie/kbo-nummer">
-                            <span property="skos:prefLabel" language="nl">KBO-nummer</span>;
+                            <span property="skos:prefLabel" lang="nl">KBO-nummer</span>;
                         </div>
                     </div>
                 </div>
@@ -189,53 +188,54 @@
             <div property="belgif:hasRequirement" typeof="m8g:Requirement"
                 resource="http://data.lblod.info/id/voorwaarden/3">
                 <span property="m8g:isRequirementOf" resource="http://data.lblod.info/id/voorwaarden/1"></span>
-                <span property="dct:type" value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit">
-                    <div property="dct:description" lang="nl">
-                        1) hetzij, voor <div property="ext:expectedValue"
-                            resource="http://data.lblod.info/id/activiteiten/werken-uitvoeren" typeof="skos:Concept">
-                            <span property="skos:prefLabel" language="nl">werken uit te voeren</span>
+                <span property="dct:type"
+                    value="https://data.vlaanderen.be/id/concept/VoorwaardeType/activiteit"></span>
+                <div property="dct:description" lang="nl">
+                    1) hetzij, voor <div property="ext:expectedValue"
+                        resource="http://data.lblod.info/id/activiteiten/werken-uitvoeren" typeof="skos:Concept">
+                        <span property="skos:prefLabel" lang="nl">werken uit te voeren</span>
+                    </div>
+                </div>
+                :
+                <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
+                    resource="http://data.lblod.info/id/voorwaarden/3/bewijstypelijst/1">
+                    <div property="m8g:specifiesEvidenceType" typeof="m8g:EvidenceType"
+                        resource="http://data.lblod.info/id/voorwaarden/3/bewijstype/1">
+                        <div property="m8g:evidenceTypeClassification"
+                            resource="https://data.vlaanderen.be/id/concept/bewijstypeclassificatie/actief-ondernemingsnummer-algemeen-en-openbaar-belang"
+                            typeof="skos:Concept">
+                            een actief ondernemingsnummer met een KBO-NACEBEL code gekoppeld aan activiteiten, die
+                            aantonen dat de
+                            onderneming producten of diensten levert die van algemeen en openbaar belang zijn
                         </div>
                     </div>
-                    :
-                    <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
-                        resource="http://data.lblod.info/id/voorwaarden/3/bewijstypelijst/1">
-                        <div property="m8g:specifiesEvidenceType" typeof="m8g:EvidenceType"
-                            resource="http://data.lblod.info/id/voorwaarden/3/bewijstype/1">
-                            <div property="m8g:evidenceTypeClassification"
-                                resource="https://data.vlaanderen.be/id/concept/bewijstypeclassificatie/actief-ondernemingsnummer-algemeen-en-openbaar-belang"
-                                type="skos:Concept">
-                                een actief ondernemingsnummer met een KBO-NACEBEL code gekoppeld aan activiteiten, die
-                                aantonen dat de
-                                onderneming producten of diensten levert die van algemeen en openbaar belang zijn
-                            </div>
+                </div>
+                <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
+                    resource="http://data.lblod.info/id/voorwaarden/3/bewijstypelijst/2">
+                    <div property="m8g:specifiesEvidenceType" typeof="m8g:EvidenceType"
+                        resource="http://data.lblod.info/id/voorwaarden/3/bewijstype/1">
+                        <div property="m8g:evidenceTypeClassification"
+                            resource="https://data.vlaanderen.be/id/concept/bewijstypeclassificatie/actief-ondernemingsnummer-waardetransporten"
+                            typeof="skos:Concept">
+                            een actief ondernemingsnummer met een KBO-NACEBEL code gekoppeld aan activiteiten, die
+                            aantonen dat de
+                            onderneming waardetransporten organiseert
                         </div>
                     </div>
-                    <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
-                        resource="http://data.lblod.info/id/voorwaarden/3/bewijstypelijst/2">
-                        <div property="m8g:specifiesEvidenceType" typeof="m8g:EvidenceType"
-                            resource="http://data.lblod.info/id/voorwaarden/3/bewijstype/1">
-                            <div property="m8g:evidenceTypeClassification"
-                                resource="https://data.vlaanderen.be/id/concept/bewijstypeclassificatie/actief-ondernemingsnummer-waardetransporten"
-                                type="skos:Concept">
-                                een actief ondernemingsnummer met een KBO-NACEBEL code gekoppeld aan activiteiten, die
-                                aantonen dat de
-                                onderneming waardetransporten organiseert
-                            </div>
+                </div>
+                <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
+                    resource="http://data.lblod.info/id/voorwaarden/3/bewijstypelijst/2">
+                    <div property="m8g:specifiesEvidenceType" typeof="m8g:EvidenceType"
+                        resource="http://data.lblod.info/id/voorwaarden/3/bewijstype/1">
+                        <div property="m8g:evidenceTypeClassification"
+                            resource="https://data.vlaanderen.be/id/concept/bewijstypeclassificatie/actief-ondernemingsnummer-dienst-openbaar-bestuur"
+                            typeof="skos:Concept">
+                            een actief ondernemingsnummer met een KBO-NACEBEL code gekoppeld aan activiteiten, die
+                            aantonen dat de
+                            onderneming met een dienst van openbaar bestuur uitmaken.
                         </div>
                     </div>
-                    <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
-                        resource="http://data.lblod.info/id/voorwaarden/3/bewijstypelijst/2">
-                        <div property="m8g:specifiesEvidenceType" typeof="m8g:EvidenceType"
-                            resource="http://data.lblod.info/id/voorwaarden/3/bewijstype/1">
-                            <div property="m8g:evidenceTypeClassification"
-                                resource="https://data.vlaanderen.be/id/concept/bewijstypeclassificatie/actief-ondernemingsnummer-dienst-openbaar-bestuur"
-                                type="skos:Concept">
-                                een actief ondernemingsnummer met een KBO-NACEBEL code gekoppeld aan activiteiten, die
-                                aantonen dat de
-                                onderneming met een dienst van openbaar bestuur uitmaken.
-                            </div>
-                        </div>
-                    </div>
+                </div>
             </div>
             <div typeof="mobiliteit:Zone" resource="https://data.lblod.info/id/zone/x">
                 <span property="rdfs:label">zone X</span>.
@@ -248,10 +248,10 @@
             </div>
         </div>
         <div typeof="m8g:Requirement" resource="https://data.lblod.info/id/voorwaarden/1">
-            <span property="dct:type" value="https://data.vlaanderen.be/id/concept/voorwaarde/zone">Zone
-                <div property="prov:atLocation" typeof="https://data.vlaanderen.be/ns/mobiliteit#Zone"
-                    resource="https://data.lblod.info/id/zone/x"> X
-                </div>
+            <span property="dct:type" value="https://data.vlaanderen.be/id/concept/voorwaarde/zone"></span>
+            <div property="prov:atLocation" typeof="https://data.vlaanderen.be/ns/mobiliteit#Zone"
+                resource="https://data.lblod.info/id/zone/x"> X
+            </div>
         </div>
         Deze vergunning is <div typeof="m8g:Requirement" resource="https://data.lblod.info/id/voorwaarden/2">
             <span property="dct:type" resource="https://data.vlaanderen.be/id/concept/voorwaarde/periode"></span>
@@ -274,7 +274,7 @@
                         resource="https://data.vlaanderen.be/id/concept/voorwaarde/gebruiktGeenDeelwagen"></span>
                     <span property="dct:description">Ofwel wordt er geen deelvoertuig gebruikt.</span>
                 </div>
-                <div property=" m8g:hasRequirement" typeof="mit:Voorwaardecollectie m8g:Requirement"
+                <div property="m8g:hasRequirement" typeof="mit:Voorwaardecollectie m8g:Requirement"
                     resource="https://data.lblod.info/id/voorwaarden/6">
                     <span property="mit:operatie"
                         value="https://data.vlaanderen.be/id/concept/logischeOperatie/AND"></span>
@@ -282,16 +282,16 @@
                         resource="https://data.lblod.info/id/voorwaarden/7">
                         <span property="dct:type"
                             resource="https://data.vlaanderen.be/id/concept/voorwaarde/gebruiktDeelwagen"></span>
-                        <span property="dct:description">Ofwel wordt er wel een deelvoertuig gebruikt" </span>
+                        <span property="dct:description">Ofwel wordt er wel een deelvoertuig gebruikt</span>
                     </div>
-                    <div property=" m8g:hasRequirement" typeof="m8g:Requirement"
+                    <div property="m8g:hasRequirement" typeof="m8g:Requirement"
                         resource="https://data.lblod.info/id/voorwaarden/8">
                         <span property="dct:type"
                             resource="https://data.vlaanderen.be/id/concept/voorwaarde/deelwagenbewijs"></span>
                         <span property="dct:description">en wordt aangetoond met een document dat de aanvrager deze
                             deelwagen
                             gebruikt.</span>
-                        <div property=" m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
+                        <div property="m8g:hasEvidenceTypeList" typeof="m8g:EvidenceTypeList"
                             resource="https://data.lblod.info/id/bewijstypelijst/1">
                             <div property="m8g:specifiesEvidenceType" typeof="m8g:EvidenceType"
                                 resource="https://data.lblod.info/id/bewijstype/1">
@@ -303,6 +303,7 @@
                 </div>
             </span>
         </div>
+    </div>
 </body>
 
 </html>
